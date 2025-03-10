@@ -6,7 +6,7 @@ document.getElementById("submit").addEventListener("click",()=>{
 
     clear_the_screen();
 
-    fetch(`https://restcountries.com/v3.1/name/${ country_name }`)
+    fetch(`https://restcountries.com/v3.1/name/${ country_name }?fullText=true`)
         .then((response) => response.json())
         .then((data) =>{
             // deal with our data
@@ -32,6 +32,7 @@ document.getElementById("submit").addEventListener("click",()=>{
            
         })
         .catch((err) => {
+            console.log(err);
             alert(`${country_name} does not exists, please enter a valid country name`);
         });
     
