@@ -1,0 +1,39 @@
+#main-body{
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    background-color:rgb(216, 216, 216);
+}
+
+#input-fields{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#country-name{
+    font: 20px;
+    width: 600px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    border: 2px solid rgb(216, 216, 216);
+
+}
+#country-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    margin: 20px;
+}
+
+#submit {
+    font: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: black;
+    border: 2px solid rgb(216, 216, 216);
+  }
