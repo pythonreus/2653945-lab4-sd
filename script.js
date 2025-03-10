@@ -32,17 +32,13 @@ document.getElementById("submit").addEventListener("click",()=>{
            
         })
         .catch((err) => {
-            alert(`${country_name} does not exists`);
+            alert(`${country_name} does not exists, please enter a valid country name`);
         });
     
 });
 
 function display_data(country_name,cap,popu,reg,flag){
     let country_info = document.getElementById("country-info");
-
-     //create a heading
-    //  let heading = document.createElement("h2");
-    //  heading.textContent = country_name;
 
      //creating an unordered list
      let list = document.createElement("ul");
@@ -68,7 +64,6 @@ function display_data(country_name,cap,popu,reg,flag){
      list.appendChild(region);
      list.appendChild(country_flag);
      list.appendChild(country_image);
-     //country_info.appendChild(heading);
      country_info.appendChild(list);
 
 }
@@ -107,7 +102,7 @@ function process_bordering_countries(borders){
             border_countries.appendChild(countries);
 
         })
-        .catch((err) => console.log(err));
+        .catch((err) => alert(`${country} does not exist, please enter a valid country name`));
     });
 
 };
